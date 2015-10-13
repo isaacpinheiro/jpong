@@ -32,17 +32,13 @@
         <tr>
           <td>
             <ul>
-              <li>W: Up</li>
-              <li>D: Right</li>
-              <li>S: Down</li>
               <li>A: Left</li>
+              <li>D: Right</li>
             </ul>
           </td>
           <td>
-            <li>U: Up</li>
-            <li>K: Right</li>
-            <li>J: Down</li>
             <li>H: Left</li>
+            <li>K: Right</li>
           </td>
         </tr>
       </table>
@@ -83,8 +79,8 @@
 
       var ball = new Component();
       ball.setId('ball');
-      ball.setX(142.5);
-      ball.setY(142.5);
+      ball.setX(142);
+      ball.setY(142);
 
       var scenario = new Scenario();
       scenario.setId('scenario');
@@ -93,8 +89,31 @@
       scenario.setPlayer2(player2);
 
       function controls(){
-        // TODO
-        alert(window.event.keyCode);
+
+        if((window.event.keyCode == 97 || window.event.keyCode == 65) && scenario.getPlayer1().getX() > 0){
+
+          scenario.getPlayer1().setX(parseInt(scenario.getPlayer1().getX() - 5));
+          p1.style.marginLeft = scenario.getPlayer1().getX()+'px';
+
+        }else if((window.event.keyCode == 100 || window.event.keyCode == 68) && scenario.getPlayer1().getX() < 230){
+
+          scenario.getPlayer1().setX(parseInt(scenario.getPlayer1().getX() + 5));
+          p1.style.marginLeft = scenario.getPlayer1().getX()+'px';
+
+        }
+
+        if((window.event.keyCode == 104 || window.event.keyCode == 72) && scenario.getPlayer2().getX() > 0){
+
+          scenario.getPlayer2().setX(parseInt(scenario.getPlayer2().getX() - 5));
+          p2.style.marginLeft = scenario.getPlayer2().getX()+'px';
+
+        }else if((window.event.keyCode == 107 || window.event.keyCode == 75) && scenario.getPlayer2().getX() < 230){
+
+          scenario.getPlayer2().setX(parseInt(scenario.getPlayer2().getX() + 5));
+          p2.style.marginLeft = scenario.getPlayer2().getX()+'px';
+
+        }
+
       }
 
       document.body.onkeypress = controls;
