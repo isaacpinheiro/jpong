@@ -1,0 +1,13 @@
+{
+  "name": "pongjs",
+  "description": "A simple Pong game developed with JavaScript and Node-Webkit.",
+  "version": "1.0.0",
+  "author": "Isaac Pinheiro <isaacpnhr@gmail.com>",
+  "main": "index.html",
+  "window": {
+    "toolbar": false,
+    "width": 300,
+    "height": 400,
+    "resizable": false
+  }
+}
