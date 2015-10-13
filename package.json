@@ -6,8 +6,8 @@
   "main": "index.html",
   "window": {
     "toolbar": false,
-    "width": 300,
-    "height": 400,
+    "width": 400,
+    "height": 500,
     "resizable": false
   }
 }

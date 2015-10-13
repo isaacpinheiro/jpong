@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Arial";
+  font-size: 12px;
+  color: #000000;
+}
+
+p {
+  font-family: "Arial";
+  font-size: 12px;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  border: none;
+}
+
+@media all {
+
+  #scenario {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: -150px;
+    left: 50%;
+    border: 3px #0066ff solid;
+  }
+
+  #help {
+    position: relative;
+    width: 300px;
+    height: 115px;
+    margin-top: 10px;
+    margin-left: -150px;
+    left: 50%;
+  }
+
+  #player2 {
+    position: absolute;
+    margin-left: 115px;
+    margin-top: 50px;
+  }
+
+  #ball {
+    position: absolute;
+    margin-left: 142.5px;
+    margin-top: 142.5px;
+  }
+
+  #player1 {
+    position: absolute;
+    margin-left: 115px;
+    margin-top: 240px;
+  }
+
+}
