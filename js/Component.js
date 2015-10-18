@@ -30,6 +30,6 @@ var Component = function(){
     return _y;
   };
 
-}
+};
 
 module.exports = Component;

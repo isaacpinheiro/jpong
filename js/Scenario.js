@@ -106,6 +106,6 @@ var Scenario = function(){
 
   };
 
-}
+};
 
 module.exports = Scenario;
